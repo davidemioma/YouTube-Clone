@@ -42,7 +42,7 @@ const VideoCard = ({ video }: Props) => {
   return (
     <div className="w-full max-w-[250px] cursor-pointer">
       <div
-        className="w-full h-32"
+        className="w-full h-32 overflow-hidden"
         onClick={() => router.push(`/video/${video.id}`)}
       >
         <img

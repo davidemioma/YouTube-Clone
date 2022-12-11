@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .scrollBtn {
+    @apply absolute top-1/2 -translate-y-1/2 bg-[#202020] w-10 h-10 items-center justify-center rounded-full;
+  }
+}

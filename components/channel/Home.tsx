@@ -49,7 +49,7 @@ const Home = ({ videos, subs }: Props) => {
     <div className="w-full max-w-4xl mx-auto">
       {videos[0] && (
         <div
-          className={`flex space-x-4 pb-5 border-b ${
+          className={`flex flex-col md:flex-row gap-y-2 gap-x-4 pb-5 border-b ${
             mode === "dark"
               ? "border-gray-500/50 text-white"
               : "border-gray-200 text-black"
@@ -67,7 +67,7 @@ const Home = ({ videos, subs }: Props) => {
 
           <div className="mt-1">
             <Link href={`/video/${videos[0]?.id}`}>
-              <h2 className="text-lg cursor-pointer font-medium w-[150px] sm:w-full truncate">
+              <h2 className="text-lg cursor-pointer font-medium w-full truncate">
                 {videos[0]?.title}
               </h2>
             </Link>
